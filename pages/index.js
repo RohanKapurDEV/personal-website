@@ -57,14 +57,7 @@ export default function Home() {
         <Header>
           <HeaderTitle>👋 Hi, I'm Rohan.</HeaderTitle>
           <HeaderContactBar>
-            <Image
-              onClick={() => {
-                console.log("click");
-              }}
-              src="/images/twitter.png"
-              height="32px"
-              width="32px"
-            ></Image>
+            <Image src="/images/twitter.png" height="32px" width="32px"></Image>
             <div style={{ width: "1rem" }}></div>
             <Image src="/images/gmail.png" height="32px" width="32px"></Image>
           </HeaderContactBar>
@@ -102,7 +95,7 @@ export default function Home() {
         </BuiltWrapper>
 
         <BlogWrapper>
-          <h1>Blog posts:</h1>
+          <h1>Writings:</h1>
           <p>Sorry, nothing to see here for now :(</p>
         </BlogWrapper>
       </Bodywrapper>
