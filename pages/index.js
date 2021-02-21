@@ -46,6 +46,11 @@ const BlogWrapper = styled.div`
   margin: 3rem 1rem;
 `;
 
+const copyToClipboard = () => {
+  navigator.clipboard.writeText("kapurrohan56@gmail.com");
+  alert("My email has been copied to your clipboard 🤝");
+};
+
 export default function Home() {
   return (
     <>
@@ -57,9 +62,16 @@ export default function Home() {
         <Header>
           <HeaderTitle>👋 Hi, I'm Rohan.</HeaderTitle>
           <HeaderContactBar>
-            <Image src="/images/twitter.png" height="32px" width="32px"></Image>
+            <Image
+              src="/images/twitter.png"
+              height="32px"
+              width="32px"
+              onClick={() => {
+                window.location = "https://www.twitter.com/0xrohan";
+              }}
+            ></Image>
             <div style={{ width: "1rem" }}></div>
-            <Image src="/images/gmail.png" height="32px" width="32px"></Image>
+            <Image src="/images/gmail.png" height="32px" width="32px" onClick={() => copyToClipboard()}></Image>
           </HeaderContactBar>
         </Header>
 
