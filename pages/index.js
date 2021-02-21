@@ -26,7 +26,15 @@ const HeaderContactBar = styled.div`
 `;
 
 const IntroRow = styled.div`
-  margin: 0 0 1rem 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem;
+`;
+
+const IntroText = styled.div`
+  width: 80%;
+  /* background-color: red; */
 `;
 
 // constZ
@@ -51,12 +59,14 @@ export default function Home() {
       </Header>
 
       <IntroRow>
-        <p>
-          I’m an independent software developer thats passionate about the decentralisation of the traditional
+        <Image src="/images/me.png" height="150" width="150"></Image>
+        <div style={{ width: "1rem" }}></div>
+        <IntroText>
+          I’m an independent software researcher that's passionate about the decentralisation of the traditional
           institutions that underpin society. This is why most of the software I work on is to help advance the adoption
-          of decentralised money systems. The easiest ways to contact me are by using any of the options available in
-          the header.
-        </p>
+          of decentralised money systems. <br></br> <br></br> The easiest ways to contact me are by using any of the
+          options available in the header.
+        </IntroText>
       </IntroRow>
     </Bodywrapper>
   );
