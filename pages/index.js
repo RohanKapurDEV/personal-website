@@ -89,7 +89,9 @@ export default function Home() {
         <BuiltWrapper>
           <h1>Things I've built:</h1>
           <button
-            onClick={() => {}}
+            onClick={() => {
+              window.location = "https://github.com/Paymint-Labs/Paymint";
+            }}
             style={{
               textDecoration: "underline",
               cursor: "pointer",
