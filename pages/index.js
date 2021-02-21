@@ -83,9 +83,21 @@ export default function Home() {
 
         <BuiltWrapper>
           <h1>Things I've built:</h1>
-          <p onClick={() => {}} style={{ textDecoration: "underline", cursor: "pointer" }}>
+          <button
+            onClick={() => {}}
+            style={{
+              textDecoration: "underline",
+              cursor: "pointer",
+              border: "none",
+              backgroundColor: "inherit",
+              color: "inherit",
+              margin: "0",
+              padding: "0",
+              font: "inherit",
+            }}
+          >
             Paymint - A bitcoin wallet for Android devices
-          </p>
+          </button>
           <p>More here soon ;)</p>
         </BuiltWrapper>
 
