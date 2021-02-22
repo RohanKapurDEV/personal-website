@@ -76,7 +76,7 @@ export default function Home() {
         </Header>
 
         <IntroRow>
-          <Image src="/images/me.png" height="150" width="150"></Image>
+          <Image src="/images/me.png" height="150" width="150" priority={true}></Image>
           <div style={{ width: "1rem" }}></div>
           <IntroText>
             I’m an independent software researcher that's passionate about the decentralisation of the traditional
