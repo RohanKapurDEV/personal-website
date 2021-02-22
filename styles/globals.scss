@@ -10,4 +10,13 @@ body {
 
   @media screen and (max-width: 992px) {
   }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    background: rebeccapurple;
+  }
+
+  ::selection {
+    background: rebeccapurple;
+  }
 }
