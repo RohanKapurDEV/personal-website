@@ -69,9 +69,16 @@ export default function Home() {
               onClick={() => {
                 window.location = "https://www.twitter.com/0xrohan";
               }}
+              priority={true}
             ></Image>
             <div style={{ width: "1rem" }}></div>
-            <Image src="/images/gmail.png" height="32px" width="32px" onClick={() => copyToClipboard()}></Image>
+            <Image
+              src="/images/gmail.png"
+              height="32px"
+              width="32px"
+              onClick={() => copyToClipboard()}
+              priority={true}
+            ></Image>
           </HeaderContactBar>
         </Header>
 
